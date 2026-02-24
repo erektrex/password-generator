@@ -3,19 +3,22 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div class="container">
         <h1>Generate a <span class = "green" >random password</span></h1>
         <p>Never use an insecure password again</p>
         <button class="btn-generate" onclick="generatePasswords()">Generate passwords</button>
-        <label>Password length: <input type="number" id="password-length" value="15" min="6" max="18" />
+      <div class="controls">
+        <label><span class="label-text length">Password length:</span> <input type="number" id="password-length" value="15" min="6" max="18" />
         </label>
-        <label>Include numbers<input type="checkbox" id="include-numbers" checked/></label>
-        <label>Include symbols<input type="checkbox" id="include-symbols" checked/></label>
-        
-        
+        <label><span class="label-text">Include numbers</span><input type="checkbox" id="include-numbers" checked/></label>
+        <label><span class="label-text">Include symbols</span><input type="checkbox" id="include-symbols" checked></label>
+      </div>
+      
         <hr />
         <div class="password-section">
          <button class="btn-password first" onclick="copyPassword(this)">>nfJjy!dDvR&ial</button>
          <button class="btn-password second" onclick="copyPassword(this)">egxWij@veiPUwK</button>
+        </div>
         </div>
         <script src="index.js"></script>
     </body>

@@ -25,7 +25,17 @@ function getCharacterSet() {
 
 // Helper function: generate a password of specified length
 function getRandomPassword () {
-    let length = Number(document.getElementById("password-length").value)
+    let lengthInput = document.getElementById("password-length")
+    let length = document.getElementById("password-length").value
+    if (length<6) {
+        length=6
+        lengthInput.value = 6
+    }
+        else if (length>18)
+        {
+            length=18 
+            lengthInput.value=18
+        }
     let password = ""
     let charset = getCharacterSet()
     for (let i=0; i<length; i++) {

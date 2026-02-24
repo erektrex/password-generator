@@ -1,12 +1,14 @@
 body {
+    min-height: 100vh;
     background-color: #1F2937;
     color: #FFFFFF;
     margin: 0;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
+
 }
 
 .green  {
@@ -39,14 +41,42 @@ hr {
     background-color: #273549;
     color: #55F991;
     flex: 0 1 auto; 
-    
     }
 
 .password-section {
     margin-top: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
 }
 
+.label-text {
+    padding: 5px 12px;
+    margin-right: 4px;
+    background-color:darkgoldenrod;
+    border: 1px solid #1F2937;
+    border-radius: 8px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.label-text.length {
+    background-color: cornflowerblue;
+    margin-left: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.container {
+    text-align: center;
+}
