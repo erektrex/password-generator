@@ -26,7 +26,7 @@ function getCharacterSet() {
 // Helper function: generate a password of specified length
 function getRandomPassword () {
     let lengthInput = document.getElementById("password-length")
-    let length = document.getElementById("password-length").value
+    let length = Number(document.getElementById("password-length").value)
     if (length<6) {
         length=6
         lengthInput.value = 6
